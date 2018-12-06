@@ -1,0 +1,18 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="service-endpoint" audience="service" href="/docs/services/service-endpoint/getting-started.html" path="services/service-endpoint" }
+Service Endpoint
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    enable-servicepoint.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    faq.md
+    getting-help.md
+   {: .navgroup-end}
