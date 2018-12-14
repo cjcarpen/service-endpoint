@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-07-25"
+  years: 2018
+lastupdated: "2018-12-11"
 
 ---
 
@@ -22,15 +22,78 @@ To get started with IBM Cloud Service Endpoint you need to make sure you have th
 3. Account must be enabled for connectivity to Service Endpoints. 
 
 
-Today, enabling 2 and 3 is a manual ticket driven process. Follwing the steps below to start this process. 
-1. Open a support case in the account you want to onboard to Service Endpoint: [Support Ticket](https://console.bluemix.net/unifiedsupport/tickets/add)
-2. Select the "Account & access" option
-3. Create a ticket with the following details.
-### Subject: 
-Private Network: Enable Service Endpoint access for my account
-### Details: 
-We are requesting that this account be enabled to use "IBM Cloud Service Endpoint". Please transfer this ticket directly to the Cloud Network Support Engineering team.
+## Enabling your account for using Service Endpoints using IBM Cloud CLI
+{: #cs_cli_install_steps}
 
 
+<br>
+To install the CLIs:
 
-In the very near future support case creation will be automated through the IBM Cloud UX and CLI. Additonal updates will be included here when these capabilities are available. 
+1.  As a prerequisite for using Service Endpoints, install the [{{site.data.keyword.Bluemix_notm}} CLI](../cli/index.html#overview). The prefix for running commands by using the {{site.data.keyword.Bluemix_notm}} CLI is `ibmcloud`. Make sure the CLI version is 0.13. 
+
+2.  Log in to the {{site.data.keyword.Bluemix_notm}} CLI. Enter your {{site.data.keyword.Bluemix_notm}} credentials when prompted.
+
+    ```
+    ibmcloud login
+    ```
+    {: pre}
+
+    If you have a federated ID, use `ibmcloud login --sso` to log in to the {{site.data.keyword.Bluemix_notm}} CLI. Enter your user name and use the provided URL in your CLI output to retrieve your one-time passcode. You know you have a federated ID when the login fails without the `--sso` and succeeds with the `--sso` option.
+    {: tip}
+
+3.  Check if your account is already enabled for Service Endpoints.
+
+    ```
+    ibmcloud account show 
+    ```
+    {: pre}
+
+    Example CLI output:
+
+    ```
+    Retrieving account Mark Anderson's Account of m.anderson@gmail.com...
+    OK
+                                 
+     Account ID:                   d154dfbd0bc2edefthyufffc9b5ca318   
+     Currently Targeted Account:   true   
+     Linked Softlayer Account:     1008967   
+     Service Endpoint Enabled:     false  
+     ```
+     {: screen}
+            
+    If 'Service Endpoint Enabled' is neither True or False, run the following command to initiate the IaaS configurations. 
+    
+     ```
+    ibmcloud sl init
+    ```
+    {: pre}
+    
+    If Service Endpoint Enabled is True, your account is already enabled to acces Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
+
+4.  If Service Endpoint Enabled is False, run the following command to enable it.
+
+    ```
+    ibmcloud account update --service-endpoint-enable true
+    ```
+    {: pre}
+    
+    This will prompt the user to open a support ticket with IBM Cloud to enable this account to use Service Endpoints. 
+    Example CLI output:
+    
+    ```
+    Service Endpoint is not available in linked Softlayer Account 1008967. 
+    Enable VRF(Virtual Routing and Forwarding) first to proceed. 
+    Learn more about VRF here - https://cloud.ibm.com/docs/infrastructure/direct-link/vrf-on-ibm-cloud.html.
+    
+    Do you want to open a ticket to enable it?[y/N]> y
+    Ticket 70729615 was opened successfully. Follow the link https://control.softlayer.com/support/tickets/70729876 to check   the details and track the status of the ticket. You will be required to login to view this ticket.
+    Account ID:    1008967
+    Ticket:        Private Network Question - Enable Service Endpoint connectivity for my account 
+    ```
+    {: screen}
+   
+5. Once the account is enabled for Service Endpoints, one can start comsuming the Service Endpooints of IBM Cloud Services that have exposed this functionality. 
+
+<br/>
+
+In the very near future support case creation will be automated through the IBM Cloud Console. Additonal updates will be included here when these capabilities are available. 
