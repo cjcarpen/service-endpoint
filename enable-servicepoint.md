@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-11"
+  years: 2018, 2019
+lastupdated: "2019-01-04"
 
 ---
 
@@ -68,7 +68,7 @@ To install the CLIs:
     ```
     {: pre}
     
-    If Service Endpoint Enabled is True, your account is already enabled to acces Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
+    If Service Endpoint Enabled is True, your account is already enabled to access Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
 
 4.  If Service Endpoint Enabled is False, run the following command to enable it.
 
@@ -92,7 +92,7 @@ To install the CLIs:
     ```
     {: screen}
    
-5. Once the account is enabled for Service Endpoints, one can start comsuming the Service Endpooints of IBM Cloud Services that have exposed this functionality. 
+5. Once the account is enabled for Service Endpoints, one can start consuming the Service Endpoints of IBM Cloud Services that have exposed this functionality. 
 
 <br/>
 
