@@ -6,9 +6,6 @@ Service Endpoint
 
     {: .navgroup id="learn"}
     getting-started.md
-    {: .navgroup-end}
-
-    {: .navgroup id="howto"}
     enable-servicepoint.md
     {: .navgroup-end}
 
