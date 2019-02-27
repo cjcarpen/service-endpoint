@@ -21,7 +21,7 @@ lastupdated: "2019-02-01"
 ## Does IBM Cloud Service Endpoint support IBM Virtual Private Cloud(VPC) ?
 {: faq}
 
-No. IBM Cloud Service Endpoint only supports IBM Cloud Classic enviroments. Support for VPC will be enabled after after VPC goes GA. Learn more about VPC's [here](https://cloud.ibm.com/docs/infrastructure/vpc/about-vpc-is.html).
+No. IBM Cloud Service Endpoint only supports IBM Cloud Classic enviroments. Support for VPC will be enabled after after VPC goes GA. Learn more about VPC [here](https://cloud.ibm.com/docs/infrastructure/vpc?topic=vpc-about-ibm-cloud-virtual-private-cloud-vpc-infrastructure).
 
 ## How will IBM Cloud Service Endpoint be charged ? 
 {: faq}
@@ -32,7 +32,3 @@ IBM Cloud Service Endpoint is free to use. A user will only pay for the IBM Clou
 {: faq}
 
 No. Please visit the respective service docs to see if a service has enabled this capability. 
-
-
-
-
