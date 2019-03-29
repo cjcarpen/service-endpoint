@@ -29,7 +29,7 @@ To get started with IBM Cloud Service Endpoint you need to make sure you have th
 <br>
 To install the CLIs:
 
-1.  As a prerequisite for using Service Endpoints, install the [{{site.data.keyword.Bluemix_notm}} CLI](../cli/index.html#overview). The prefix for running commands by using the {{site.data.keyword.Bluemix_notm}} CLI is `ibmcloud`. Make sure the CLI version is 0.13. 
+1.  As a prerequisite for using Service Endpoints, install the [{{site.data.keyword.Bluemix_notm}} CLI](../cli/index.html#overview). The prefix for running commands by using the {{site.data.keyword.Bluemix_notm}} CLI is `ibmcloud`. Make sure the CLI version is 0.13 or greater. 
 
 2.  Log in to the {{site.data.keyword.Bluemix_notm}} CLI. Enter your {{site.data.keyword.Bluemix_notm}} credentials when prompted.
 
@@ -61,8 +61,6 @@ To install the CLIs:
      ```
      {: screen}
             
-    {: pre}
-    
     If Service Endpoint Enabled is True, your account is already enabled to access Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
 
 4.  If Service Endpoint Enabled is False, run the following command to enable it.
