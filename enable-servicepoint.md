@@ -53,12 +53,14 @@ To install the CLIs:
     ```
     Retrieving account Mark Anderson's Account of m.anderson@gmail.com...
     OK
-                                 
-     Account ID:                   d154dfbd0bc2edefthyufffc9b5ca318   
-     Currently Targeted Account:   true   
-     Linked Softlayer Account:     1008967   
-     Service Endpoint Enabled:     false  
-     ```
+    
+    Account ID:                   d154dfbd0bc2edefthyufffc9b5ca318   
+    Currently Targeted Account:   true   
+    Linked Softlayer Account:     1008967   
+    Service Endpoint Enabled:     false  
+    ```
+    {: screen}
+     
      If Service Endpoint Enabled is True, your account is already enabled to access Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
 
 4.  If Service Endpoint Enabled is False, run the following command to enable it.
