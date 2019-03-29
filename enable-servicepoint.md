@@ -59,9 +59,7 @@ To install the CLIs:
      Linked Softlayer Account:     1008967   
      Service Endpoint Enabled:     false  
      ```
-     {: screen}
-            
-    If Service Endpoint Enabled is True, your account is already enabled to access Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
+     If Service Endpoint Enabled is True, your account is already enabled to access Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
 
 4.  If Service Endpoint Enabled is False, run the following command to enable it.
 
