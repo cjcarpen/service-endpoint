@@ -61,11 +61,6 @@ To install the CLIs:
      ```
      {: screen}
             
-    If 'Service Endpoint Enabled' is neither True or False, run the following command to initiate the IaaS configurations. 
-    
-     ```
-    ibmcloud sl init
-    ```
     {: pre}
     
     If Service Endpoint Enabled is True, your account is already enabled to access Service Endpoints exposed by IBM Cloud Services on the cloud catalog. 
