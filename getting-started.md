@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-11"
+  years: 2018, 2019
+lastupdated: "2019-03-29"
 
 ---
 
@@ -23,18 +23,18 @@ corporate policy but, in some cases, required by compliance regulations that gov
 IBM has enhanced their connectivity options for customers who require isolated connectivity options for 
 their workloads. 
 
-IBM Cloud Service Endpoint allows customers to connect to IBM Cloud services through the internal IBM 
-Cloud network. 
-Moving these workloads from IBM’s public cloud network offers two advantages to the client.
+IBM Cloud Service Endpoint allows customers to connect to IBM Cloud services over the IBM 
+Cloud private network. 
+Moving these workloads from IBM Cloud's public network offers two advantages to the client.
 1. Services are no longer being served on an internet routable IP address. It is becoming increasingly common for
 cloud consumers to want limited or no access to the public internet from any of their services. Now with 
-Service Endpoints, service teams can create an internal interface for their service and customers can connect to these services using the internal network interfaces. Internet access is no longer a requirement for customers to connect to IBM services.
+Service Endpoint, service teams can create an interface over the private network for their service which customers can use to connect. Internet access is no longer a requirement for customers to connect to IBM Cloud services.
 
-2. There is no billed or metered bandwidth charges on IBM’s internal network. In the past, customers would be billed for egress bandwidth when talking to an IBM Cloud service. 
+2. There is no billed or metered bandwidth charges on IBM Cloud's private network. In the past, customers would be billed for egress bandwidth when talking to an IBM Cloud service. 
 
-With IBM’s Service Endpoint, the solution becomes more appealing from a security and a consumption standpoint.
+With IBM Cloud Service Endpoint, the solution becomes more appealing from a security and a consumption standpoint.
 
-The following figure shows how traffic is routed through IBM Cloud's internal network when accessing cloud services through Service Endpoints:
+The following figure shows how traffic is routed through IBM Cloud's private network when accessing cloud services through Service Endpoints:
 
 
 ![IBM Cloud Service Endpoint](images/CSE.png)
